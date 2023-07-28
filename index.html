@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework12</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/JavaScript.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/9515c21077.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .box {
+            border-radius: 10px;
+        }
+
+        body {
+            height: 150vh;
+        }
+
+        .icon-bg {
+            width: 35px !important;
+            height: 35px !important;
+            line-height: 35px;
+            margin-left: 20px;
+        }
+
+
+        .content p {
+            position: relative;
+        }
+
+        .content p::before {
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 80%;
+            background-color: #e2e3e5;
+            top: 15px;
+            left: -34px;
+        }
+    </style>
+</head>
+
+<body class=" bg-body-secondary ">
+    <div class="container my-5  ">
+        <div class="row justify-content-center ">
+            <div class="col-12 col-xl-8">
+                <div class=" box bg-white ">
+
+                    <a class=" border-0 btn text-start my-3  " data-bs-toggle="collapse" href="#contentId-1" aria-expanded="true"
+                        aria-controls="contentId-1">
+
+                        <h3>Education</h3>
+
+                    </a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable  modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Education</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Country" value="Cambodia">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="University*" >
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Degree*" >
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Major*" >
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Card-Body // -->
+                    <div class="collapse show" id="contentId-1">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>The University of Manchester - Manchester</h5>
+                                    <p>Master's degree in Computer Software Engineering<br>
+                                        <span class="text-secondary fs-0_85rem">October 2012 to December 2023</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex pt-3">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>University of Oxford - Oxford</h5>
+                                    <p>Bachelor's degree in Computer Software Engineering<br>
+                                        <span class="text-secondary fs-0_85rem">October 2009 to May 2012</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex pt-3">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>American University of Phnom Penh</h5>
+                                    <p>Bachelor's degree of Management Information Systems<br>
+                                        <span class="text-secondary fs-0_85rem">October 2009 to May 2012</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center mt-5 ">
+            <div class="col-12 col-xl-8">
+                <div class=" box bg-white ">
+
+                    <a class="border-0 btn text-start my-3" data-bs-toggle="collapse" href="#contentIdExp" aria-expanded="true"
+                        aria-controls="contentId-1">
+
+                        <h3>Experience</h3>
+
+                    </a>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable  modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Experience</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                      
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Position*" >
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Company name*" >
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" placeholder="Type of employment*" >
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Card-Body // -->
+                    <div class="collapse show" id="contentIdExp">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>Head of IT Department</h5>
+                                    <p>Dropbox - London<br>
+                                        <span class="text-secondary fs-0_85rem">December 2016 to Present <br>
+                                            The company has high epectations and using OKRs there is <br> mutual
+                                            understanding of expectations and performance. </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex pt-3">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>Senior Software ENgineer</h5>
+                                    <p>Mailchimp - London<br>
+                                        <span class="text-secondary fs-0_85rem">November 2014 to December 2016 <br>
+                                            This is an excellent company and they reward their employees. <br>it's
+                                            becoming a big company but it;s still private,
+                                            so the culture is <br> as good as it gets at 1,000+ em... </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex pt-3">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>Junior Software ENgineer</h5>
+                                    <p>Google - London<br>
+                                        <span class="text-secondary fs-0_85rem">January 2014 to November 2014
+                                            <br><br>Work in Google is one of the beaufiful
+                                            experience i can do in my <br> entire life. There are a lot of interesting
+                                            thing to learn and <br> manager respect your time and your personality.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex pt-3">
+                                <div class="icon">
+                                    <div class="bg-secondary-subtle icon-bg text-center rounded-circle">
+                                        <i class="fa-solid fa-graduation-cap text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="content ps-3">
+                                    <h5>Internship</h5>
+                                    <p>Htmlstream under Pixeel Ltd. - London<br>
+                                        <span class="text-secondary fs-0_85rem">December 2023 to January 2014 <br><br>My
+                                            first steps... </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
